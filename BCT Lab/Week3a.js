@@ -1,6 +1,6 @@
 // 3A
 const {Web3} = require('web3');
-const web3 = new Web3('https://Sepolia.infura.io/v3/35c2b7c8ecc6493cb073943d1bb7d15a');
+const web3 = new Web3('https://Sepolia.infura.io/v3/9ef65ae1fe6c4c68b0a842493dfadeba');
 
 // const ganacheUrl = 'HTTP://127.0.0.1:7545'
 // const web3 = new Web3(ganacheUrl);
