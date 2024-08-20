@@ -644,7 +644,7 @@
   "sourceMap": "58:180:0:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "58:180:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:25;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;112:52;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;166:69;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;84:25;;;;:::o;112:52::-;159:1;146:10;:14;;;;112:52;:::o;166:69::-;202:7;221:10;;214:17;;166:69;:::o;7:139:1:-;;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:262::-;;260:2;248:9;239:7;235:23;231:32;228:2;;;276:1;273;266:12;228:2;319:1;344:53;389:7;380:6;369:9;365:22;344:53;:::i;:::-;334:63;;290:117;218:196;;;;:::o;420:118::-;507:24;525:5;507:24;:::i;:::-;502:3;495:37;485:53;;:::o;544:222::-;;675:2;664:9;660:18;652:26;;688:71;756:1;745:9;741:17;732:6;688:71;:::i;:::-;642:124;;;;:::o;772:77::-;;838:5;827:16;;817:32;;;:::o;855:122::-;928:24;946:5;928:24;:::i;:::-;921:5;918:35;908:2;;967:1;964;957:12;908:2;898:79;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract SimpleStorage {\r\nuint256 public storedData;\r\nfunction set(uint256 x) public {\r\nstoredData = x;\r\n}\r\nfunction get() public view returns (uint256) {\r\nreturn storedData;\r\n}\r\n}",
-  "sourcePath": "C:\\Users\\my pc\\Desktop\\MyTruffleProject\\contracts\\SimpleStorage.sol",
+  "sourcePath": "C:\\Users\\KLN\\Documents\\GitHub\\sem7\\BCT Lab\\MyTruffleProject\\contracts\\SimpleStorage.sol",
   "ast": {
     "absolutePath": "project:/contracts/SimpleStorage.sol",
     "exportedSymbols": {
@@ -903,12 +903,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x98a3B8762234B60B2CC6CD24329a219e95AD58d1",
-      "transactionHash": "0x3a96fc926e42e2c1cb4f7e18c0496c013dd6242dd3a1ce2cad0611b0b14ff6b0"
+      "address": "0x6Ca5617C5ad6538A556b0Bb30De2ea51846394d4",
+      "transactionHash": "0x91f15f12deda340e2b3da3f5c330ec11cc2b27d69d1d3e4048863953adaef032"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-07-30T07:48:29.428Z",
+  "updatedAt": "2024-08-20T08:12:14.115Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
