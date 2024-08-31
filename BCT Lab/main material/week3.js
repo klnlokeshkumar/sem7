@@ -8,15 +8,19 @@ async function main() {
       'https://sepolia.infura.io/v3/9ef65ae1fe6c4c68b0a842493dfadeba',//add your api key
     ),
   );
-
+  // Get the latest block
   const latestBlock = await web3.eth.getBlock("latest");
+  // Retrieve Gas price from the latest block
   const baseFeePerGas = latestBlock.baseFeePerGas;
+  // Calculate maximum gas price 
   const maxFeePerGas = BigInt(baseFeePerGas) + BigInt(web3.utils.toWei("2", "gwei"));
 
 
   // Creating a signing account from a private key
   const signer = web3.eth.accounts.privateKeyToAccount('0xd5dd48b6e4311ec1e35f970742b193680b19ca009cde52a6edc419071bd65981');//add your private key
+  // Adding signer to the accounts wallet
   web3.eth.accounts.wallet.add(signer);
+  // estimate gas fee for a transaction
   await web3.eth
     .estimateGas(
       {
@@ -44,6 +48,7 @@ async function main() {
     chainId: 11155111,
     type: 0x2,
   };
+  // Signing transaction with the private key
   signedTx = await web3.eth.accounts.signTransaction(tx, signer.privateKey);
   console.log("Raw transaction data: " + signedTx.rawTransaction);
   // Sending the transaction to the network
