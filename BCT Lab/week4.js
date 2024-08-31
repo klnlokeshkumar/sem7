@@ -11,19 +11,16 @@ web3.eth.net
     console.log("Connected to network ID:", networkId);
   })
   .catch((error) => {
-    console.log("Connected to network ID:", networkId);
-  })
-  .catch((error) => {
     console.error("Error connecting to Ganache:", error);
   });
 const accountAddress = "0xbc14dDeCD661d9de02ba1320d0C6204eB0BC160F";
 web3.eth.getBalance(accountAddress).then((balance) => {
-    console.log(
-      "Account balance:",
-      web3.utils.fromWei(balance, "ether"),
-      "ETH"
-    );
-  })
+  console.log(
+    "Account balance:",
+    web3.utils.fromWei(balance, "ether"),
+    "ETH"
+  );
+})
   .catch((error) => {
     console.error("Error fetching balance:", error);
   });
